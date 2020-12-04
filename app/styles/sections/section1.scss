@@ -1,0 +1,151 @@
+.section1 {
+	background: url(../images/bg1.jpg) center center/cover no-repeat;
+}
+
+.section1-screen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0, .25);
+}
+
+.section-content {
+	display: flex;
+	flex-flow: column;
+}
+
+.rest-info {
+	position: relative;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	margin-bottom: 94px;
+
+	// border: 2px solid red;
+}
+
+.main-headline {
+	color: rgb(255, 255, 255);
+	font-family: $Oswald;
+	font-size: 112px;
+	font-weight: 400;
+
+	@include desctop {
+		font-size: 90px;
+		margin-bottom: 10px;
+	}
+
+	@include tablet-landscape {
+		font-size: 75px;
+	}
+
+	@include tablet-portrait {
+		font-size: 57px;
+	}
+
+	@include tablet-small {
+		font-size: 40px;
+		color: black;
+	}
+
+	@include phone-landscape {
+		font-size: 40px;
+		color: yellow;
+	}
+
+}
+
+.work-info_hours {
+	color: rgb(255, 255, 255);
+	font-family: $Vollkorn;
+	font-size: 27px;
+	font-weight: 400;
+	text-align: center;
+
+	@include desctop {
+		font-size: 22px;
+	}
+
+	@include tablet-landscape {
+		font-size: 18px;
+	}
+}
+
+.work-info_phone {
+	display: block;
+	@extend .work-info_hours;
+	margin-bottom: 22px;
+}
+
+.reseration-btn--1section {
+	margin-bottom: 35px;
+}
+
+.socials_list {
+	display: flex;
+}
+
+.socials_item {
+	height: 50px;
+	width: 50px;
+	margin-right: 10px;
+	&:last-child {
+		margin-right: 0;
+	}
+
+	@include tablet-landscape {
+		width: 40px;
+		height: 40px;
+		margin-right: 7px;
+	}
+}
+
+.socials_link {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.socials_icon {
+	width: 100%;
+	height: 100%;
+	fill: white;
+	transition: .25s all ease;
+	&:hover {
+		transform: scale(1.15);
+	}
+}
+
+.button-down {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+}
+
+.button-down_link {
+	position: relative;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-down_icon {
+	width: 38px;
+	height: 38px;
+	fill: white;
+}
+
+
+.button-down_link:hover>.button-down_icon {
+	
+	animation-duration: 2s;
+	
+	animation-iteration-count: infinite;
+	animation-delay: 7s;
+	
+	// fill: red;
+}

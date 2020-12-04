@@ -1,0 +1,23 @@
+.reseration-btn {
+	padding: 15px 18px;;
+	background-color: rgb(242, 153, 74);
+	border: 0;
+	font-family: $Roboto;
+	font-size: 18px;
+	font-weight: 400;
+	color: #fff;
+	text-transform: uppercase;
+	transition: .3s all ease;
+	&:hover {
+		background-color: $btn-col-hov;
+	}
+	&:active {
+		background-color: $btn-col-act;
+	}
+
+	@include desctop {
+		padding: 12px 15px;
+		font-size: 18px;
+		color: #fff;
+	}	
+}
