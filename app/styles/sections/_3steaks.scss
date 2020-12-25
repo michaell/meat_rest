@@ -1,0 +1,36 @@
+.steaks {
+	background: url(../images/bg3.jpg) center center/cover no-repeat;
+}
+
+.steaks__content {
+	display: flex;
+	justify-content: center;
+}
+
+.steak-card {
+	background-color: #fff;
+	max-width: 280px;
+	margin-right: 20px;
+	transition: all .3s ease;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&:hover {
+		transform: translateY(-10px);
+	}
+
+	&__img {
+		height: 262px;
+		object-fit: cover;
+	}
+
+	&__info {
+		padding: 7px 13px 33px 24px;
+	}
+
+	&__headline {
+		margin-bottom: 16px;
+	}
+}

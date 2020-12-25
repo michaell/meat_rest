@@ -1,16 +1,30 @@
 /*-----------------------------colors----------------------------*/
+//buttons
+$btn-color: #f2994a;
+$btn-color-hov: #d66f14;
+$btn-color-act: #c35c00;
+$btn-color-add: #828282;
+
+//socials, hover state
 $google-red: #ea4335;
-$btn-col-act: #c35c00;
 $twitter-blue: #38a1f3;
-$btn-col-hov: #d66f14;
-$btn-col-add: #828282;
 $facebook-blue: #3b5998;
-$text-col: #4f4f4f;
-$btn-col: #f2994a;
+
+//texts
+$text-color: #4f4f4f;
+
 
 
 /*-----------------------------fonts----------------------------*/
 $default-font: "Times New Roman";
-$Oswald: 'Oswald', Helvetica, Arial, sans-serif;
-$Roboto: 'Roboto', Helvetica, Arial, sans-serif;
-$Vollkorn: 'Vollkorn', 'Times New Roman', serif;
+$Oswald: 'Oswald',
+Helvetica,
+Arial,
+sans-serif;
+$Roboto: 'Roboto',
+Helvetica,
+Arial,
+sans-serif;
+$Vollkorn: 'Vollkorn',
+'Times New Roman',
+serif;

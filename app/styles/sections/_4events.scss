@@ -1,0 +1,26 @@
+.events {
+	&__content {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+}
+
+.event-card {
+	max-width: 380px;
+
+	&__headline {
+		@extend .card-headline;
+		font-size: 28px;
+	}
+
+	&:nth-child(odd) {
+		margin-right: 220px;
+	}
+
+	&__image-wrap {}
+
+	&__img {}
+
+	&__description {}
+}

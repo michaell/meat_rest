@@ -1,31 +1,59 @@
-.top-line
-	.container.container-top-line
-		.top-line_wrapper
-			nav.nav
-				ul.nav_list
-					li.nav_item
-						a.nav_link(href="#") Кухня
-					li.nav_item
-						a.nav_link(href="#") Залы
-					li.nav_item
-						a.nav_link(href="#") Наш шеф
-					li.nav_item
-						a.nav_link(href="#") Мероприятия
-					li.nav_item
-						a.nav_link(href="#") Как добраться
-					li.nav_item
-						a.nav_link(href="#") Контакты
-				.nav_responsive
-					svg.nav_icon
+header.section.header
+	.top-line.flex-center
+		.container.relative
+			nav.top-line__nav
+				ul.top-line__nav-list
+					li.top-line__list-item
+						a.top-line__list-link(href="#") Кухня
+					li.top-line__list-item
+						a.top-line__list-link(href="#") Залы
+					li.top-line__list-item
+						a.top-line__list-link(href="#") Наш шеф
+					li.top-line__list-item
+						a.top-line__list-link(href="#") Мероприятия
+					li.top-line__list-item
+						a.top-line__list-link(href="#") Как добраться
+					li.top-line__list-item
+						a.top-line__list-link(href="#") Контакты
+				.responsive-btn
+					svg.responsive-btn__icon
 						use(xlink:href='assets/sprites/sprite.svg#menu')
 			.langs
-				ul.langs_list
-					li.langs_item
-						a.langs_link(href="#")
-							img.langs_icon(src='assets/images/russia.svg')
-					li.langs_item
-						a.langs_link(href="#")
-							img.langs_icon(src='assets/images/china.svg')
-					li.langs_item
-						a.langs_link(href="#")
-							img.langs_icon(src='assets/images/united-kingdom.svg')
+				ul.langs__list
+					li.langs__item
+						a.langs__link(href="#")
+							img.langs__icon(src='assets/images/russia.svg')
+					li.langs__item
+						a.langs__link(href="#")
+							img.langs__icon(src='assets/images/china.svg')
+					li.langs__item
+						a.langs__link(href="#")
+							img.langs__icon(src='assets/images/united-kingdom.svg')
+	.container
+		.header__content
+			.header__info
+				.header__headline Ресторан «Дело в Мясе»
+				.header__work-info
+					.header__work-hours Часы работы: 12.00 - 1.00, ежедневно
+					a.header__work-phone(href="tel:+74316510121") +7(431) 651-01-21
+				button.reseration-btn.reseration-btn--1section Забронировать столик
+				.socials
+					ul.socials_list
+						li.socials_item
+							a.socials_link(href="#")
+								svg.socials_icon
+									use(xlink:href='assets/sprites/sprite.svg#twitter-logo')
+						li.socials_item
+							a.socials_link.socials_link--facebook(href="#")
+								svg.socials_icon
+									use(xlink:href='assets/sprites/sprite.svg#facebook-logo')
+						li.socials_item
+							a.socials_link.socials_link--google(href="#")
+								svg.socials_icon
+									use(xlink:href='assets/sprites/sprite.svg#google-logo')
+			.button-down
+				a.button-down_link(href="#")
+					svg.button-down_icon.animated.bounce
+						use(xlink:href='assets/sprites/sprite.svg#down-arrow')
+
+			

@@ -1,6 +1,7 @@
 /*-----------------------------helpers----------------------------*/
 @import "helpers/mixins";
 @import "helpers/variables";
+@import "helpers/utilities";
 
 /*-----------------------------responsive----------------------------*/
 @import "responsive/responsive.scss";
@@ -22,17 +23,13 @@
 @import "pages/index";
 
 /*-----------------------------common----------------------------*/
-@import "common/footer";
 @import "common/header";
+@import "common/footer";
 
 /*-----------------------------sections----------------------------*/
-@import "sections/section1";
-@import "sections/section2";
-@import "sections/section3";
-@import "sections/section4";
-@import "sections/section5";
-@import "sections/section6";
-@import "sections/section7";
-
-
-
+@import "sections/2best";
+@import "sections/3steaks";
+@import "sections/4events";
+@import "sections/5halls";
+@import "sections/6chef";
+@import "sections/7adress";

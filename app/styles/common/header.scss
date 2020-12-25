@@ -1,27 +1,16 @@
+//navigation
 .top-line {
 	height: 172px;
-	margin-bottom: -172px;
 	z-index: 5;
 	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
-	
-	// @include desctop {
-	// 	display: none;
-	// }	
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-top: 30px;
 }
 
-.container-top-line {
-	margin-top: 30px;
-
-	@include desctop {
-		margin-top: 40px;
-	}
-}
-
-.top-line_wrapper {
-	position: relative;
-}
-
-.nav {
+.top-line__nav {
 	display: flex;
 	justify-content: center;
 
@@ -30,7 +19,7 @@
 	}
 }
 
-.nav_list {
+.top-line__nav-list {
 	display: flex;
 	flex-flow: row wrap;
 
@@ -39,8 +28,9 @@
 	}
 }
 
-.nav_item  {
+.top-line__list-item {
 	margin-right: 46px;
+
 	&:last-child {
 		margin-right: 0;
 	}
@@ -50,7 +40,7 @@
 	}
 }
 
-.nav_link {
+.top-line__list-link {
 	text-transform: uppercase;
 	color: rgb(255, 255, 255);
 	font-family: $Oswald;
@@ -58,12 +48,13 @@
 	font-weight: 400;
 	line-height: 28px;
 	transition: .3s all ease;
-	
+
 	&:hover {
-		color: $btn-col-hov;
+		color: $btn-color-hov;
 	}
+
 	&:active {
-		color: $btn-col-act;
+		color: $btn-color-act;
 	}
 
 	@include tablet-landscape {
@@ -71,7 +62,7 @@
 	}
 }
 
-.nav_responsive {
+.responsive-btn {
 	width: 50px;
 	height: 50px;
 	display: none;
@@ -81,7 +72,7 @@
 	}
 }
 
-.nav_icon {
+.responsive-btn__icon {
 	width: 100%;
 	height: 100%;
 	fill: white;
@@ -90,25 +81,26 @@
 .langs {
 	position: absolute;
 	right: 0;
-	top: 3px;
+	top: 2px;
 
-	@include desctop {
-		top: -38px;
-	}
+	// @include desctop {
+	// 	top: -38px;
+	// }
 
-	@include tablet-portrait {
-		top: 7px;
-	}
+	// @include tablet-portrait {
+	// 	top: 7px;
+	// }
 }
 
-.langs_list {
+.langs__list {
 	display: flex;
 }
 
-.langs_item {
+.langs__item {
 	width: 27px;
 	height: 27px;
 	margin-right: 4px;
+
 	&:last-child {
 		margin-right: 0;
 	}
@@ -119,6 +111,160 @@
 	}
 }
 
-.langs_link {
+.langs__link {
 	display: block;
+}
+
+// header content
+.header {
+	background: url(../images/bg1.jpg) center center/cover no-repeat;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, .3);
+	}
+}
+
+.header__content {
+	//make header content be placed "above" gradient
+	position: relative;
+	z-index: 10;
+}
+
+.header__info {
+	position: relative;
+	text-align: center;
+	margin-bottom: 94px;
+}
+
+.header__headline {
+	color: rgb(255, 255, 255);
+	font-family: $Oswald;
+	font-size: 112px;
+	font-weight: 400;
+
+	@include desctop {
+		font-size: 90px;
+		margin-bottom: 10px;
+	}
+
+	@include tablet-landscape {
+		font-size: 75px;
+	}
+
+	@include tablet-portrait {
+		font-size: 57px;
+	}
+
+	@include tablet-small {
+		font-size: 40px;
+		color: black;
+	}
+
+	@include phone-landscape {
+		font-size: 40px;
+		color: yellow;
+	}
+
+}
+
+.header__work-info {
+	margin-bottom: 22px;
+}
+
+.header__work-hours {
+	color: rgb(255, 255, 255);
+	font-family: $Vollkorn;
+	font-size: 27px;
+	font-weight: 400;
+	text-align: center;
+
+	@include desctop {
+		font-size: 22px;
+	}
+
+	@include tablet-landscape {
+		font-size: 18px;
+	}
+}
+
+.header__work-phone {
+	display: block;
+	@extend .header__work-hours;
+}
+
+
+.socials_list {
+	display: flex;
+	justify-content: center;
+}
+
+.socials_item {
+	height: 50px;
+	width: 50px;
+	margin-right: 10px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	@include tablet-landscape {
+		width: 40px;
+		height: 40px;
+		margin-right: 7px;
+	}
+}
+
+.socials_link {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.socials_icon {
+	width: 100%;
+	height: 100%;
+	fill: white;
+	transition: .25s all ease;
+
+	&:hover {
+		transform: scale(1.15);
+	}
+}
+
+.button-down {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column;
+}
+
+.button-down_link {
+	position: relative;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-down_icon {
+	width: 38px;
+	height: 38px;
+	fill: white;
+}
+
+
+.button-down_link:hover>.button-down_icon {
+
+	animation-duration: 2s;
+
+	animation-iteration-count: infinite;
+	animation-delay: 7s;
+
+	// fill: red;
 }

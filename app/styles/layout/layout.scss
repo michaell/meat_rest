@@ -44,64 +44,53 @@ body {
 // Жёсткий контейнер
 
 .container {
-	margin: 0 auto;
-	display: flex;
-	flex-flow: column;
-	flex: 1;
-	justify-content: center;
+	flex: 100%;
 
+	// border: 1px solid white;
 
-	border: 1px solid white;
+	@include max {
+		max-width: 1300px;
+	}
 
+	@include desctop-big {
+		//1400px
+		max-width: 1150px;
+	}
 
-	// @include desctop-big {
-	// 	width: 1300px;
-	// }
-	// @include desctop {
-	// 	width: 970px;
-	// }
-	// @include tablet-landscape {
-	// 	width: 750px;
-	// }
-	// @include tablet-portrait {
-	// 	width: 600px;
-	// }
-	// @include tablet-small {
-	// 	width: 450px;
-	// }
-	// @include phone-landscape {
-	// 	width: 90%;
-	// }
-	// @include phone-portrait {
-	// 	width: 95%;
-	// }
+	@include desctop {
+		//1200px
+		max-width: 970px;
+	}
+
+	@include tablet-landscape {
+		//980px
+		max-width: 750px;
+	}
+
+	@include tablet-portrait {
+		//768px
+		max-width: 550px;
+	}
+
+	@include tablet-small {
+		//600px
+		max-width: 450px;
+	}
+
+	@include phone-landscape {
+		//480px
+		max-width: 90%;
+	}
+
+	@include phone-portrait {
+		//320px
+		max-width: 95%;
+	}
 }
 
-// Резиновый контейнер
-// .container {
-// margin: 0 auto;
-// display: flex;
-// flex-flow: column;
-// flex: 1;
-// justify-content: center;
 
-// 	@include desctop-big {
-// 		width: 1170px;
-// 	}
-// 	@include desctop {
-// 		width: 85%;
-// 	}
-// 	@include phone-landscape {
-// 		width: 90%;
-// 	}
-// 	@include phone-portrait {
-// 		width: 95%;
-// 	}
-// }
 
 .wrapper {
-	// display: flex;
-	// flex-flow: column;
 	min-height: 100vh;
 	overflow: hidden;
 }
@@ -149,7 +138,8 @@ img {
 
 .section {
 	display: flex;
-	flex-flow: column;
-	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
 	position: relative;
 }
